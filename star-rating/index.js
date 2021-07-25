@@ -28,6 +28,7 @@ document.querySelectorAll(".star-button").forEach(item => {
 })
 
 document.querySelectorAll(".star-button").forEach(item => {
+    // add event khi click -> đổi rating sang rating mình bấm
     item.addEventListener("click", () => {
         rating = parseInt(item.id)
     })
@@ -37,6 +38,8 @@ document.querySelectorAll(".star-button").forEach(item => {
     // add event khi mình hơ chuột trên icon
     item.addEventListener("mouseleave", () => {
         for(let i = 0;i<5;i++){
+            // nếu star có id < rating thì mình giữ nó solid, còn nếu không thì
+            // chuyển sang regular (rỗng ruột)
             if(i+1 <= rating){
                 stars[i].className = "fas fa-star star-button";
             }
