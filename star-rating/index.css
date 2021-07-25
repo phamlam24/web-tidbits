@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.star-button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: darkorange;
+    font-size: 40px;
+}
+.star-button:hover{
+    cursor: pointer;
+}
